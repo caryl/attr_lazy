@@ -1,0 +1,23 @@
+=AttrLazy
+
+== Description
+attr_lazy是个懒加载text字段的插件
+
+* version 0.03
+* by Caryl
+
+== Requirements
+
+* Rails 2.2 or greater
+
+==Installation
+
+  ./script/plugin install git://github.com/caryl/attr_lazy.git
+
+==Getting Started
+
+Example:
+  class Article
+      include AttrLazy
+      attr_lazy :body
+  end
